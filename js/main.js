@@ -33,7 +33,7 @@ const scrollObserver = new IntersectionObserver(entries => {
         if (!entry.isIntersecting) {
             scrollTop.style.right = "3%";
         } else {
-            scrollTop.style.right = "-3%";
+            scrollTop.style.right = "-30%";
         }
 
     });

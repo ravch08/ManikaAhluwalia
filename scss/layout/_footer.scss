@@ -139,6 +139,7 @@ footer {
     position: fixed;
     bottom: 5%;
     right: 3%;
+    z-index: 99;
     transition: background-color, .3s ease-in-out,
         right 0.3s ease-in-out;
     background-color: darken($color: $color-primary, $amount: 15%);
