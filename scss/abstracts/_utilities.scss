@@ -1,0 +1,32 @@
+// CLASS DEFAULTS ----------------------------------------------------------------------------------
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin-inline: auto;
+    max-width: $width-container;
+}
+
+section {
+    padding: $section-padding 0;
+}
+
+.w-100 {
+    max-width: 100%;
+}
+
+.horz-line {
+    width: 6rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 4%;
+    left: 0;
+    background-color: $color-primary;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container {
+        width: 90%;
+    }
+}

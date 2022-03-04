@@ -1,0 +1,95 @@
+#monogram-shop {
+    position: relative;
+    padding-bottom: 0;
+
+    .monogram-section {
+        top: 54%;
+        left: 56%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.monogram-section {
+
+    .horz-line {
+        top: 16.8%;
+        left: 34%;
+        background-color: $color-primary;
+    }
+
+    span {
+        margin-left: 3rem;
+    }
+
+    h2 {
+        color: $color-primary;
+    }
+
+    p {
+        padding: 2.5rem 0 5rem;
+    }
+}
+
+#client-slider {
+    padding: 1rem 0;
+    border-bottom: 1px solid $color-light-400;
+}
+
+
+
+
+// -- MEDIA QUERIES -------------------------------------------------------------------
+
+
+@media screen and (min-width: 1500px) {
+
+    .monogram-bg {
+        top: 16%;
+        right: 5%;
+        height: 80%;
+        display: block;
+        position: absolute;
+    }
+}
+
+
+@media screen and (max-width: 1499px) {
+
+    #monogram-shop {
+
+        .monogram-bg {
+            display: none;
+        }
+
+        .monogram-section {
+            left: 62%;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    #monogram-shop {
+
+        .monogram-section {
+            width: 50%;
+
+            h2 {
+                font-size: 4rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 628px) {
+
+
+    #monogram-shop {
+
+        .monogram-section {
+            left: 50%;
+            width: 90%;
+        }
+    }
+}

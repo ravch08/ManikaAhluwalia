@@ -1,0 +1,141 @@
+.new-arrival-wrapper {
+    @extend .flexRow-start;
+
+    .horz-line {
+        top: 14%;
+        right: 7%;
+        left: unset;
+    }
+
+    h2 {
+        font-size: 3.6rem;
+    }
+
+}
+
+.women {
+    position: relative;
+    flex-basis: 50%;
+
+    img {
+        border-radius: 0.3s;
+        @include transition(transform, 0.5s);
+    }
+
+    &:hover {
+
+        img {
+            transform: translateX(2rem);
+        }
+
+        .women-content {
+            transform: translateX(-2rem);
+            background-color: darken($color: $color-tertiary, $amount: 15%);
+        }
+    }
+
+    .women-content {
+        top: 8%;
+        right: -40%;
+        width: 50%;
+        padding: 2.4rem;
+        text-align: right;
+        border-radius: 0.3rem;
+        position: absolute;
+        @extend .flexColumn-start;
+        background-color: $color-tertiary;
+        transition: transform 0.5s ease-in-out,
+            background-color 0.5s ease-in-out;
+
+        span {
+            font-size: 1.3rem;
+            transform: translateX(-2rem);
+        }
+
+        h2 {
+            margin: 1rem 0 1.4rem;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+.men {
+    flex-basis: 25%;
+
+    figure {
+        overflow: hidden;
+    }
+
+    img {
+        border-radius: 0.3rem;
+        transform: scale(1.0);
+        @include transition(transform, 0.5s);
+    }
+
+    h2 {
+        @include transition(color, 0.5s);
+    }
+
+    &:hover {
+
+        img {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            color: $color-primary;
+        }
+    }
+
+    .men-content {
+        padding: 1.5rem 2rem;
+        @extend .flexColumn-start;
+
+        p {
+            margin: 1rem 0 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+
+    .women {
+        flex-basis: 45%;
+
+        .women-content {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .new-arrival-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .women {
+        .women-content {
+            top: 40%;
+            right: 0%;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .women {
+
+        .women-content {
+            top: 0;
+            right: 0;
+            width: 100%;
+            position: relative;
+        }
+    }
+}

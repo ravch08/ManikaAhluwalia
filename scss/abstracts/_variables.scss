@@ -1,0 +1,65 @@
+// Font Variables -------- fm - Font Family -- fs - Font Size -- fw - Font Weight -------
+
+$fm-body : "Nunito Sans",
+sans-serif;
+
+$fm-primary : 'Playfair Display',
+sans-serif;
+
+$fm-secondary : 'Nunito',
+sans-serif;
+
+$fs-h1 : 5rem;
+$fs-h2 : 4.2rem;
+$fs-h3 : 1.8rem;
+$fs-h4 : 1.8rem;
+$fs-h5 : 1.5rem;
+$fs-h6 : 1.2rem;
+
+$fs-btn : 1.6rem;
+$fs-body : 1.4rem;
+$fs--icons : 1.2rem;
+$fs-bar : 1.2rem;
+$fs-subheading : 1.6rem;
+
+// -- Line Height - lh -------------------------------------------------------------------
+
+$lh-body : 1.7;
+$lh-heading : 1.2;
+
+// Color Variables -----------------------------------------------------------------------
+
+$color-gradient1: linear-gradient(to top, #2A41FF, transparent);
+$color-gradient2: linear-gradient(to top, transparent, #2A41FF);
+
+$color-scrollbar : #eee;
+$color-scrollThumb : #cf9350;
+
+$color-primary : #cf9350;
+$color-secondary : #111;
+$color-tertiary : #fff2dc;
+
+$color-light-100 : #ffffff;
+$color-light-400 : #e0e0e0;
+$color-light-800 : #e8e8e8;
+
+$color-Dark-100 :#575757;
+$color-Dark-400 : #111111;
+$color-Dark-800 : #000000;
+
+$color-footerBar : #000;
+
+$color-body : #575757;
+
+// Dimensions Variables ------------------------------------------------------------------
+
+$width-container : 1200px;
+$section-padding : 5rem;
+
+// Box Shadow ----------------------------------------------------------------------------
+
+$box-shadow-lg: 0 1rem 3rem rgba(black, .175);
+$box-shadow-md: 0 .5rem 1rem rgba(black, .15);
+$box-shadow-sm: 0 .125rem .25rem rgba(black, .075);
+
+// --------------------------------------------------------------------------------------
