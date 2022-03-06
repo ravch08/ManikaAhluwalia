@@ -4,6 +4,18 @@
         position: relative;
         flex-basis: 40%;
     }
+
+    .author {
+
+        p {
+            color: $color-primary;
+            padding: 0.3rem 0;
+        }
+
+        small {
+            letter-spacing: 0.2rem;
+        }
+    }
 }
 
 .designer-wrapper {
@@ -24,17 +36,7 @@
     }
 }
 
-.author {
 
-    p {
-        color: $color-primary;
-        padding: 0.3rem 0;
-    }
-
-    small {
-        letter-spacing: 0.2rem;
-    }
-}
 
 #instagram-posts {
     background-color: $color-tertiary;
