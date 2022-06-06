@@ -1,47 +1,47 @@
 // CLASS DEFAULTS ----------------------------------------------------------------------------------
 
 .container {
-    width: 80%;
-    height: 100%;
-    margin-inline: auto;
-    max-width: $width-container;
+	width: 80%;
+	height: 100%;
+	margin-inline: auto;
+	max-width: $width-container;
 }
 
 section {
-    padding: $section-padding 0;
+	padding: $section-padding 0;
 }
 
 .w-100 {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .d-flex {
-    display: flex;
+	display: flex;
 }
 
 .horz-line {
-    width: 6rem;
-    height: 0.2rem;
-    position: absolute;
-    top: 4%;
-    left: 0;
-    background-color: $color-primary;
+	width: 6rem;
+	height: 0.2rem;
+	position: absolute;
+	top: 4%;
+	left: 0;
+	background-color: $color-primary;
 }
 
 .fade-in {
-    opacity: 0;
-    transform: translateY(5rem);
-    transition: transform 0.6s ease-in, opacity 0.7s ease-in;
+	opacity: 0;
+	transform: translateY(5rem);
+	transition: transform 0.6s ease-in, opacity 0.7s ease-in;
 
-    &.appear {
-        opacity: 1;
-        transform: translateY(0rem);
-    }
+	&.appear {
+		opacity: 1;
+		transform: translateY(0rem);
+	}
 }
 
 @media screen and (max-width: 1200px) {
 
-    .container {
-        width: 90%;
-    }
+	.container {
+		width: 90%;
+	}
 }
