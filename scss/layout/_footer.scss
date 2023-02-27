@@ -1,160 +1,159 @@
 footer {
-    width: 100%;
-    padding: 3rem 0;
-    background-color: $color-footerBar;
+	width: 100%;
+	padding: 3rem 0;
+	background-color: $color-footerBar;
 
-    .footer-wrapper {
-        gap: 2.5rem;
-        flex-wrap: wrap;
-        @extend .flexRow-start;
-    }
+	.footer-wrapper {
+		gap: 2.5rem;
+		flex-wrap: wrap;
+		@extend .flexRow-start;
+	}
 
-    .ftr-title {
-        display: flex;
-        color: $color-primary;
-        padding-bottom: 1.5rem;
-        transform: translateX(0.6rem);
-    }
+	.ftr-title {
+		display: flex;
+		color: $color-primary;
+		padding-bottom: 1.5rem;
+		transform: translateX(0.6rem);
+	}
 }
 
 .ftr-logo-content {
-    flex-basis: 30%;
+	flex-basis: 30%;
 
-    .ftr-logo {
-        font-size: 3rem;
-        color: $color-primary;
-    }
+	.ftr-logo {
+		font-size: 3rem;
+		color: $color-primary;
+	}
 
-    p {
-        font-size: 1.4rem;
-        font-weight: 100;
-        margin: 2rem 0 4rem;
-        color: $color-light-100;
-    }
+	p {
+		font-size: 1.4rem;
+		font-weight: 100;
+		margin: 2rem 0 4rem;
+		color: $color-light-100;
+	}
 }
 
 .ftr-input {
-    position: relative;
+	position: relative;
 
-    input {
-        width: 70%;
-        border: none;
-        border-radius: 0.6rem;
-        padding: 0.8rem 0.8rem;
+	input {
+		width: 70%;
+		border: none;
+		border-radius: 0.6rem;
+		padding: 0.8rem 0.8rem;
 
-        &::placeholder {
-            font-size: 1.3rem;
-        }
-    }
+		&::placeholder {
+			font-size: 1.3rem;
+		}
+	}
 
-    .btn-submit {
-        top: 0;
-        left: 72%;
-        position: absolute;
-    }
+	.btn-submit {
+		top: 0;
+		left: 72%;
+		position: absolute;
+	}
 }
 
 .ftr-links {
 
-    .quick-links {
-        @extend .flexColumn-start;
-    }
+	.quick-links {
+		@extend .flexColumn-start;
+	}
 
-    .ftr-navs {
-        font-weight: 100;
-        padding: 0.6rem 0;
-        color: $color-light-100;
-        @include transition(transform, 0.3s);
+	.ftr-navs {
+		font-weight: 100;
+		padding: 0.6rem 0;
+		color: $color-light-100;
+		@include transition(transform, 0.3s);
 
-        &:hover {
-            transform: translateX(0.3rem);
-        }
-    }
+		&:hover {
+			transform: translateX(0.3rem);
+		}
+	}
 
-    svg {
-        fill: $color-light-100;
-        transform: translateY(0.4rem);
-    }
+	svg {
+		fill: $color-light-100;
+		transform: translateY(0.4rem);
+	}
 }
 
 .get-in-touch {
-    color: $color-light-100;
+	color: $color-light-100;
 
-    .ftr-title {
-        transform: translateX(0);
-    }
+	.ftr-title {
+		transform: translateX(0);
+	}
 
-    .email,
-    .phone,
-    .address {
-        gap: 0.6rem;
-        display: flex;
-        padding: 0.8rem 0;
-        justify-content: flex-start;
-        @include transition(color, 0.3s);
+	.email,
+	.phone,
+	.address {
+		gap: 0.6rem;
+		display: flex;
+		padding: 0.8rem 0;
+		justify-content: flex-start;
+		@include transition(color, 0.3s);
 
-        p {
-            font-weight: 100;
-        }
+		p {
+			font-weight: 100;
+		}
 
-        &:hover strong {
-            color: lighten($color: $color-primary, $amount: 15%);
-        }
-    }
+		&:hover strong {
+			color: lighten($color: $color-primary, $amount: 15%);
+		}
+	}
 }
 
 .copyright-bar {
-    padding: 1.5rem 0 1rem;
-    background-color: $color-Dark-400;
+	padding: 1.5rem 0 1rem;
+	background-color: $color-Dark-400;
 
-    .copyright-wrapper {
-        @extend .flexRow-between;
-    }
+	.copyright-wrapper {
+		@extend .flexRow-between;
+	}
 
-    p {
-        font-size: $fs-bar;
-        color: $color-light-100;
-    }
+	p {
+		font-size: $fs-bar;
+		color: $color-light-100;
+	}
 
-    span {
-        color: $color-primary;
-    }
+	span {
+		color: $color-primary;
+	}
 
-    .social-icons {
-        svg {
-            width: 1.4rem;
-            margin: 0 0.6rem;
-            fill: darken($color: $color-primary, $amount: 15%);
-        }
-    }
+	.social-icons {
+		svg {
+			width: 1.4rem;
+			margin: 0 0.6rem;
+			fill: darken($color: $color-primary, $amount: 15%);
+		}
+	}
 }
 
 .scroll-top {
-    width: 4.5rem;
-    height: 4.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5rem;
-    position: fixed;
-    bottom: 5%;
-    right: 3%;
-    z-index: 99;
-    transition: background-color, .3s ease-in-out,
-        right 0.3s ease-in-out;
-    background-color: darken($color: $color-primary, $amount: 15%);
+	display: flex;
+	width: 4.5rem;
+	height: 4.5rem;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5rem;
+	position: fixed;
+	right: 3%;
+	bottom: 5%;
+	z-index: 99;
+	transition: background-color, .3s ease-in-out,
+		right 0.3s ease-in-out;
+	background-color: darken($color: $color-primary, $amount: 15%);
 
-    svg {
-        fill: white;
-        transform: translate(-0.03rem, -0.1rem);
-    }
+	svg {
+		fill: white;
+		transform: translate(-0.03rem, -0.1rem);
+	}
 
-    &:hover {
-        background-color: $color-primary;
-    }
+	&:hover {
+		background-color: $color-primary;
+	}
 }
-
-
 
 
 // -- MEDIA QUERIES -------------------------------------------------------------------
@@ -162,22 +161,22 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .footer-wrapper {
-        gap: 4rem;
-        flex-direction: column;
-    }
+	.footer-wrapper {
+		gap: 4rem;
+		flex-direction: column;
+	}
 
-    .copyright-wrapper {
-        flex-direction: column;
-        gap: 2rem;
-    }
+	.copyright-wrapper {
+		flex-direction: column;
+		gap: 2rem;
+	}
 }
 
 
 @media screen and (max-width: 1200px) {
 
-    .ftr-logo-content {
-        flex-basis: 40%;
-        margin-bottom: 6rem;
-    }
+	.ftr-logo-content {
+		flex-basis: 40%;
+		margin-bottom: 6rem;
+	}
 }

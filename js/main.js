@@ -11,6 +11,7 @@ const closeSidebarBtn = document.querySelector('.close-sidebar');
 
 // -- Intersection Observer  -------------------------------------------------------------------
 
+
 const options = {
 	threshold: 1
 };
@@ -21,34 +22,15 @@ const appearOptions = {
 };
 
 const headerObserver = new IntersectionObserver(entries => {
-
-	entries.forEach(entry => {
-
-		if (!entry.isIntersecting) {
-			header.classList.add('sticky');
-		} else {
-			header.classList.remove('sticky');
-		}
-	});
+	entries.forEach(entry => !entry.isIntersecting ? header.classList.add('sticky') : header.classList.remove('sticky'));
 }, options);
 
 const scrollObserver = new IntersectionObserver(entries => {
-
-	entries.forEach(entry => {
-
-		if (!entry.isIntersecting) {
-			scrollTop.style.right = "3%";
-		} else {
-			scrollTop.style.right = "-30%";
-		}
-
-	});
+	entries.forEach(entry => !entry.isIntersecting ? scrollTop.style.right = "3%" : scrollTop.style.right = "-30%");
 }, options);
 
-let appearObserver = new IntersectionObserver(function (entries) {
-
+let appearObserver = new IntersectionObserver(entries => {
 	entries.forEach(entry => {
-
 		if (!entry.isIntersecting) {
 			return;
 		} else {
@@ -68,6 +50,7 @@ fadeIns.forEach(fadeIn => {
 
 // -- Event Listeners -------------------------------------------------------------------
 
+
 const openSidebar = () => {
 	sidebar.style.right = "0";
 };
@@ -77,7 +60,6 @@ const closeSidebar = () => {
 };
 
 scrollTop.addEventListener('click', () => {
-
 	window.scrollTo({
 		top: 0,
 		behavior: "smooth"
@@ -88,7 +70,6 @@ hamburgerMenu.addEventListener('click', openSidebar);
 closeSidebarBtn.addEventListener('click', closeSidebar);
 
 
-
 // -- Swiper -------------------------------------------------------------------
 
 
@@ -97,7 +78,6 @@ const clientSwiper = new Swiper('#client-list', {
 	loop: true,
 	keyboard: true,
 	spaceBetween: 10,
-	slidesPerView: 7,
 	centeredSlides: true,
 	breakpoints: {
 		100: {
